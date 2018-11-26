@@ -1,0 +1,40 @@
+<h2>Welcome to the places homepage</h2>
+ <div class="places-container">
+    <legend>Places</legend>
+    {{#each places}}
+     <div class="place key">
+         <p>Name: {{this.name}}</p>
+        <p>Longitude: <span id="long">{{this.long}}</span> Latitude: <span id="lat">{{this.lat}}</span></p>
+         <div class="place-actions-container">
+             <form action="/places/edit/{{this.id}}" method="get">
+                <button class="btn btn-primary m-1" type="submit">Edit</button>
+            </form>
+        </div>
+     </div>
+     {{/each}}
+</div class="places-container">
+ <style>
+    #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
+ <h3>My First Map</h3>
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key={{places.cl4v3}}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/javascripts/map.js"></script>
+ <br>
+<fieldset>
+    <legend>Add a Place</legend>
+    <form action="/add-place" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        </select>
+        <input type="number" step="any" name="long" id="" value=0>
+        <input type="number" step="any" name="lat" id="" value=0>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+    <br>
+</fieldset>
+<a href="/">Home</a> 
