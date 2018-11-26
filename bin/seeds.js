@@ -6,6 +6,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
+const Store = require("../models/Store");
 
 const bcryptSalt = 10;
 
@@ -45,3 +46,12 @@ User.deleteMany()
   mongoose.disconnect()
   throw err
 })
+
+let Store = {
+
+  name: req.body.name,
+  long: req.body.latitude,
+  lat: req.body.longitude
+
+}
+

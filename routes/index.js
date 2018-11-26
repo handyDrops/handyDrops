@@ -6,4 +6,6 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.use('/phone',require('./phone'))
+
 module.exports = router;

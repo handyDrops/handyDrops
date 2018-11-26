@@ -1,0 +1,35 @@
+{{!-- {{#each data}}
+{{this.DeviceName}}
+{{this.Brand}}
+{{/each}} --}}
+
+
+<form action="/phone" method="POST">
+    <p>Marca</p>
+    <input type="text" name="brand">
+    <br>
+    <p>Modelo</p> 
+    <input type="text" name="device">
+    <br>
+    <button type="submit">tu móvil</button>
+</form>
+
+
+
+{{#each data}}
+<table>
+  <tr>
+    <td>Dimensión</td>
+    <td>Peso</td>
+    <td>Resolución</td>
+  </tr>
+  <tr>
+    <th>{{this.dimensions}}</th>
+    <th>{{this.weight}}</th>
+    <th>{{this.resolution}}</th>
+  </tr>
+</table>
+{{/each}}
+
+
+resolution
