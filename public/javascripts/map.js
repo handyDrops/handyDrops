@@ -1,28 +1,22 @@
-function startMap() {
-  const ironhackBCN = {
-      lat: 41.3977381,
-      lng: 2.190471916
-  };
-  const map = new google.maps.Map(
-      document.getElementById('map'),
-      {
-          zoom: 5,
-          center: ironhackBCN
-      }
-  );
-   axios.get('/getPlaces')
-      .then((res) => {
-          console.log(res.data.places);
-          res.data.places.forEach((elem) => {
-              new google.maps.Marker({
-                  position: new google.maps.LatLng({
-                      lat: elem.lat,
-                      lng: elem.long,
-                  }),
-                  map,
-              })
-          });
-      })
-      .catch(err => console.log(err));
+let map;
+
+function initMap() {
+  position = { lat:40.3909212, lng:-3.7015007 };
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: position,
+    zoom: 10,
+  });
+  
+  places.forEach(e => {
+    console.log(e)
+    const marker = new google.maps.Marker({
+      position: { lat:e.location.lat, lng:e.location.lng },
+      map,
+      title: e.name,
+      title: e.adress,
+    });
+    marker.addListener('click', () => {
+      infowindow.open(map, marker);
+    });
+  });
 }
-startMap();

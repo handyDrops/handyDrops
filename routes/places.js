@@ -9,7 +9,7 @@ router.get("/", (req, res, next) => {
   Place.find()
     .then(places => {
       places.cl4v3 = process.env.API;
-      res.render("places/places", { places });
+      res.render("places/index", { places });
     })
     .catch(err => {
       next(err);
@@ -17,19 +17,31 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/add-place", (req, res, next) => {
-  let { name, long, lat } = req.body;
-  let newPlace = new Place({ name, long, lat });
+  let { name, adress, lng, lat } = req.body;
+  if(name === '' || lng === '' || lat === '')res.render('places', {message:'insert place'})
+  let newPlace = new Place({ name, adress, location: {lng, lat} });
   newPlace
     .save()
     .then(() => {
       res.redirect("/places");
     })
     .catch(err => {
+      console.log(err)
       next(err);
     });
 });
 
-router.get("/places/edit/:id", (req, res, next) => {
+router.post('/delete-place/:id', (req, res, next) => {
+    Place.findByIdAndRemove(req.params.id)
+        .then(() => {
+            res.redirect('/places');
+        })
+        .catch((err) => {
+            next(err);
+        })
+})
+
+router.get("/edit/:id", (req, res, next) => {
   Place.findById(req.params.id)
     .then(place => {
       res.render("places/edit", place);
@@ -39,8 +51,8 @@ router.get("/places/edit/:id", (req, res, next) => {
     });
 });
 router.post("/edit-place/:id", (req, res, next) => {
-  let { name, long, lat } = req.body;
-  Place.findByIdAndUpdate(req.params.id, { name, long, lat })
+  let { name, adress, long, lat } = req.body;
+  Place.findByIdAndUpdate(req.params.id, { name, adress, long, lat })
     .then(() => {
       res.redirect("/places");
     })
