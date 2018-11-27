@@ -1,34 +1,47 @@
 
 <form action="/phone" method="POST">
-<p>Marca</p>
-   <select name="brand">    
+   <select name="brand">   
+       <option>Marca</option> 
        <option value="Apple">Apple</option>
+       <option value="Huawei">Huawei</option>
+       <option value="LG">LG</option>
        <option value="Samsung">Samsung</option>
        <option value="Sony">Sony</option>
-       <option value="LG">LG</option>
-       <option value="Huawei">Huawei</option>
-       <option value="Xiaomi">Xiamoi</option>
    </select>
     <br>
-    <p>Modelo</p> 
-    {{!-- <input type="text" name="device"> --}}
-       <select name="device">    
-       <option value="Iphone">Iphone</option>
-       <option value="Galaxy">Galaxy</option>
-       <option value="Xperia">Xperia</option>
-       <option value="G6">G6</option>
-       <option value="P8">P8</option>
-       <option value="Mi 6">Mi 6</option>
+    <br>
     
+       <select name="device"> 
+       <option>Modelo</option> 
+       <option value="Iphone 5">Iphone5</option>   
+       <option value="Iphone 6 plus">Iphone6</option>   
+       <option value="Iphone 7 plus">Iphone7</option>
+       <option value="P10 plus">P10</option>
+       <option value="P10 lite">P10Lite</option>
+       <option value="P20">P20</option>
+       <option value="P20 lite">P20Lite</option>
+       <option value="G6">G6</option>
+       <option value="Q7">Q7</option>
+       <option value="Galaxy S5 plus">GalaxyS5</option>
+       <option value="Galaxy Y plus">GalaxyY</option>
+       <option value="Xperia XZ2 compact">XperiaXZ</option>
+       
+      
+     
+   
    </select>
     <br>
     <br>
     <button type="submit">tu móvil</button>
 </form>
+<br>
+<br>
+<h3>¿No aparece tu móvil?</h3>
+<a href="/email">¡Escríbenos!</a>
 
 <br>
 <br>
-
+{{#each data}}
 <table>
   <tr>
     <td>Modelo</td>
@@ -36,7 +49,7 @@
     <td>Pantalla</td>
     <td>Resolución</td>
   </tr>
-{{#each data}}
+
   <tr>
     <th>{{this.DeviceName}}</th>
     <th>{{this.dimensions}}</th>

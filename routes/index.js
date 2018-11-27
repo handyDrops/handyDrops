@@ -9,5 +9,6 @@ router.get('/', (req, res, next) => {
 
 router.use('/places',require('./places'));
 router.use('/email', require('./email'));
+router.use('/phone', require('./phone'));
 
 module.exports = router;
