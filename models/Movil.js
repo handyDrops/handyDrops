@@ -3,7 +3,7 @@ const Schema   = mongoose.Schema;
 
 const movilSchema = new Schema({
   
-  imei: { type: String }, 
+
   brand: { type: String }, 
   model: { type: String },
 

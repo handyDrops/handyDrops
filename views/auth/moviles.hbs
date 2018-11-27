@@ -11,7 +11,16 @@
    </select>
     <br>
     <p>Modelo</p> 
-    <input type="text" name="device">
+    {{!-- <input type="text" name="device"> --}}
+       <select name="device">    
+       <option value="Iphone">Iphone</option>
+       <option value="Galaxy">Galaxy</option>
+       <option value="Xperia">Xperia</option>
+       <option value="G6">G6</option>
+       <option value="P8">P8</option>
+       <option value="Mi 6">Mi 6</option>
+    
+   </select>
     <br>
     <br>
     <button type="submit">tu móvil</button>
@@ -20,7 +29,6 @@
 <br>
 <br>
 
-{{#each data}}
 <table>
   <tr>
     <td>Modelo</td>
@@ -28,6 +36,7 @@
     <td>Pantalla</td>
     <td>Resolución</td>
   </tr>
+{{#each data}}
   <tr>
     <th>{{this.DeviceName}}</th>
     <th>{{this.dimensions}}</th>

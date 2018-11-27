@@ -6,11 +6,8 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
-<<<<<<< HEAD
-router.use('/phone',require('./phone'))
-=======
 
 router.use('/places',require('./places'));
->>>>>>> abb1223d168f0da7cbfd66bc2a108a4cbc841fb3
+router.use('/email', require('./email'));
 
 module.exports = router;

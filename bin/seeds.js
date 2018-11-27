@@ -11,7 +11,7 @@ const Store = require("../models/Store");
 const bcryptSalt = 10;
 
 mongoose
-  .connect('mongodb://localhost/handyDrops', {useNewUrlParser: true})
+  .connect(process.env.DEBURL, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
