@@ -13,7 +13,6 @@ phoneRoute.get('/',(req,res)=>{
 
 phoneRoute.post('/',(req,res)=>{
   const { brand, device} = req.body;
-  console.log(req.body)
   fonoapi.getDevices((queryString, data)=>{
     res.render('auth/moviles',{data})
   }, device, brand);
