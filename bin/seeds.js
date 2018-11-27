@@ -47,11 +47,4 @@ User.deleteMany()
   throw err
 })
 
-let Store = {
-
-  name: req.body.name,
-  long: req.body.latitude,
-  lat: req.body.longitude
-
-}
 

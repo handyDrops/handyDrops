@@ -13,16 +13,13 @@ phoneRoute.get('/',(req,res)=>{
 
 phoneRoute.post('/',(req,res)=>{
   const { brand, device} = req.body;
-  console.log(brand, device)
+  console.log(req.body)
   fonoapi.getDevices((queryString, data)=>{
     res.render('auth/moviles',{data})
   }, device, brand);
 })
 
-// dimensions
-// weight
-// sim
-// size
+
 
 // get devices w/ brand
 // fonoapi.getDevices(myCallback, 'iphone', 'apple');
