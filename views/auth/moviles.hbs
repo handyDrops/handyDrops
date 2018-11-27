@@ -1,0 +1,46 @@
+
+<form action="/phone" method="POST">
+<p>Marca</p>
+   <select name="brand">    
+       <option value="Apple">Apple</option>
+       <option value="Samsung">Samsung</option>
+       <option value="Sony">Sony</option>
+       <option value="LG">LG</option>
+       <option value="Huawei">Huawei</option>
+       <option value="Xiaomi">Xiamoi</option>
+   </select>
+    <br>
+    <p>Modelo</p> 
+    <input type="text" name="device">
+    <br>
+    <br>
+    <button type="submit">tu móvil</button>
+</form>
+
+<br>
+<br>
+
+{{#each data}}
+<table>
+  <tr>
+    <td>Modelo</td>
+    <td>Dimensión</td>
+    <td>Pantalla</td>
+    <td>Resolución</td>
+  </tr>
+  <tr>
+    <th>{{this.DeviceName}}</th>
+    <th>{{this.dimensions}}</th>
+    <th>{{this.type}}</th>
+    <th>{{this.resolution}}</th>
+  </tr>
+</table>
+{{/each}}
+
+<br>
+<br>
+<h3>Tarifas: </h3>
+
+
+
+

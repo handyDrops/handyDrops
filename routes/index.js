@@ -7,6 +7,7 @@ router.get('/', (req, res, next) => {
 });
 
 
+
 router.use('/places',require('./places'));
 
 module.exports = router;

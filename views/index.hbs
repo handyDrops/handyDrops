@@ -1,3 +1,34 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<a href="/places">Places List</a>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+     <div id="slideshow">
+    <div>
+      <img class="image-slides" src="./img/samsung-to-guapo2.jpg">
+    </div>
+    <div>
+      <img class="image-slides" src="./img/iphone-to-guapo.jpg">
+    </div>
+    <div>
+      <img class="image-slides" src="./img/samsung-to-guapo.jpg">
+    </div>
+  </div>
+  <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+      $('#slideshow > div:first')
+        .fadeOut(3000)
+        .next()
+        .fadeIn(3000)
+        .end()
+        .appendTo('#slideshow');
+    }, 5000);
+
+  </script>
+  </body>

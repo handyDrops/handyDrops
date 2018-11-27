@@ -19,6 +19,36 @@ a {
 
 .place-actions-container {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row; 
+}
+/* 
+  #slideshow { 
+    margin-top: 0px;
+    padding: 500px; 
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
 
+
+#slideshow > div { 
+    position: absolute; 
+    top: 200px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+.image-slides {
+  width: 1440px;
+  height: 600px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-brand {
+display: flex;
+justify-content: flex-end;
+}
 /*# sourceMappingURL=style.css.map */
