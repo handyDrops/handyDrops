@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
-const storeSchema = new Schema({
+ const storeSchema = new Schema({
 
   name: {type: String, unique: true},
   long: {type: Number},
