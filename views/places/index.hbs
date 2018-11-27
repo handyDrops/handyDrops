@@ -1,8 +1,14 @@
 <h2>Welcome to the places homepage</h2>
  <div class="places-container">
-    <legend>Tiendas HandyDrops Madrid</legend>
+    <legend>Places</legend>
     {{#each places}}
     </div class="places-container">
+ <style>
+    #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
      {{!-- <div class="place key">
          <h2> {{this.name}}</h2>
           <h3> {{this.adress}}</h3>
@@ -34,58 +40,54 @@
     </form>
     <br>
 </fieldset>   --}}
-<div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="../../img/entradahandydrops.png" alt="Serrano Store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, ABC Serrano</h5>
-      <p class="card-text"> Calle Serrano, 61, 28006 Madrid</p>
-    </div>
+  
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/entradahandydrops.png" alt="Serrano Store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, ABC Serrano</h5>
+    <p class="card-text">Calle Serrano, 61, 28006 Madrid</p>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="../../img/tiendahandydrops.png" alt="Madrid Sur store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, Madrid sur</h5>
-      <p class="card-text">Av. Pablo Neruda, 91, 28018 Madrid</p>
-
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="../../img/centro-comercial-principe.jpg" alt="Principe Pio Store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, Principe Pío</h5>
-      <p class="card-text"> Paseo de la Florida, 2, 28008 Madrid</p>
-    </div>
-  </div>
-  <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="../../img/fotonoticia_20150806142554_640.jpg" alt="TresAguas Store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, TresAguas</h5>
-      <p class="card-text">  Av. San Martín de Valdeiglesias, 20, 28922 Alcorcón, Madrid</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="../../img/plazanorte4.jpg" alt="Plaza norte 2 store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, Plaza norte 2</h5>
-      <p class="card-text"> Plaza del Comercio, 11-12, 28703 San Sebastián de los Reyes, Madrid</p>
-
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="../../img/klepierre-compra-a-orion-el-centro-comercial-plenilunio-en-madrid-por-375-millones.jpg" alt="Plenilunio Store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, Plenilunio</h5>
-      <p class="card-text">Calle Aracne, s / n, 28022 Madrid</p>
-    </div>
 </div>
-  <div class="card">
-    <img class="card-img-top" src="../../img/img_amartiarena_20171020-101720_imagenes_lv_propias_amartiarena_plaza-klXG-U432179556321z4D-992x558@LaVanguardia-Web.jpg" alt="Plaza Río 2 Store">
-    <div class="card-body">
-      <h5 class="card-title">HandyDrops, Plaza Río 2</h5>
-      <p class="card-text"> Av del Manzanares, 210, 28026 Madrid</p>
-    </div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/tiendahandydrops.png" alt="Madrid Sur store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, Madrid sur</h5>
+    <p class="card-text">Av. Pablo Neruda, 91, 28018 Madrid</p>
+  </div>
+</div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/centro-comercial-principe.jpg" alt="Principe Pio Store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, Principe Pío</h5>
+    <p class="card-text">Paseo de la Florida, 2, 28008 Madrid</p>
+  </div>
+</div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/fotonoticia_20150806142554_640.jpg" alt="TresAguas Store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, TresAguas</h5>
+    <p class="card-text"> Av. San Martín de Valdeiglesias, 20, 28922 Alcorcón, Madrid</p>
+  </div>
+</div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/plazanorte4.jpg" alt="Plaza norte 2 store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, Plaza norte 2</h5>
+    <p class="card-text"> Plaza del Comercio, 11-12, 28703 San Sebastián de los Reyes, Madrid</p>
+  </div>
+</div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/klepierre-compra-a-orion-el-centro-comercial-plenilunio-en-madrid-por-375-millones.jpg" alt="Plenilunio Store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, Plenilunio</h5>
+    <p class="card-text">Calle Aracne, s / n, 28022 Madrid</p>
+  </div>
+</div>
+<div class="card mb-3">
+  <img class="card-img-top" src="./img/img_amartiarena_20171020-101720_imagenes_lv_propias_amartiarena_plaza-klXG-U432179556321z4D-992x558@LaVanguardia-Web.jpg" alt="Plaza Río 2 Store">
+  <div class="card-body">
+    <h5 class="card-title">HandyDrops, Plaza Río 2</h5>
+    <p class="card-text">Av del Manzanares, 210, 28026 Madrid</p>
   </div>
 </div>
 <a href="/">Home</a> 
