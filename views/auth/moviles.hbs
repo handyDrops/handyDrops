@@ -13,7 +13,7 @@
     
        <select name="device"> 
        <option>Modelo</option> 
-       <option value="Iphone 5">Iphone5</option>   
+       <option value="Iphone 5S">Iphone5</option>   
        <option value="Iphone 6 plus">Iphone6</option>   
        <option value="Iphone 7 plus">Iphone7</option>
        <option value="P10 plus">P10</option>
@@ -41,7 +41,6 @@
 
 <br>
 <br>
-{{#each data}}
 <table>
   <tr>
     <td>Modelo</td>
@@ -49,6 +48,9 @@
     <td>Pantalla</td>
     <td>Resolución</td>
   </tr>
+
+{{#each data}}
+
 
   <tr>
     <th>{{this.DeviceName}}</th>
@@ -61,7 +63,7 @@
 
 <br>
 <br>
-<h3>Tarifas: </h3>
+<h3>Precios: </h3>
 
 
 
