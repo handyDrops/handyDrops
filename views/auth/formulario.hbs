@@ -1,62 +1,57 @@
 <div>
-  <div class = "email">
-    <form action="/email" method="post">
-        <br>
-        <div>
-            <label for="name">Nombre:</label>
-            <input type="text" name="name"/>
-        </div>
-        <br>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" name="email"/>
-        </div>
-        <br>
-        <div>
-            <label for="msg">Mensaje:</label>
-            <textarea name="msg"></textarea>
-        </div>
-        <br>
-        <div class="g-recaptcha" data-sitekey="6Levk30UAAAAAIkPrCV379glE0Mrt-wrIxvzhevb"></div>
-        <br>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>   
-    </form>
-  </div>   
+    <div class="email">
+        <form action="/email" method="post">
+            <br>
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" />
+            </div>
+            <br>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" name="email" />
+            </div>
+            <br>
+            <div>
+                <label for="msg">Mensaje:</label>
+                <textarea name="msg"></textarea>
+            </div>
+            <br>
+            <div class="g-recaptcha" data-sitekey="6Levk30UAAAAAIkPrCV379glE0Mrt-wrIxvzhevb"></div>
+            <br>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </div>
 <footer>
-<nav>
-    <div class="container">
-    <a class="navbar-brand" href="/">
-        <img src="./img/handydropslogo.png" width="50" height="70" class="d-inline-block align-top" alt="">
-      <p class="name">
-        HandyDrops</p>
-      <ul class="nav justify-content-end">
-    </a>
-    <li class="nav-item">
-      <a class="nav-link active" href="/service">Servicios</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="/places">Donde encontrarnos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/phone">Precios</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/email">Contacta con nosotros</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/auth/login">Login</a>
-    </li>
-    </ul>
-    </div>
-    {{!-- <a href="/auth/logout">Logout</a> --}}
-  </nav>
+    <nav>
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="./img/handydropslogo.png" width="50" height="70" class="d-inline-block align-top" alt="">
+                <p class="name">
+                    HandyDrops</p>
+                <ul class="nav justify-content-end">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link active" href="/service">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/places">Donde encontrarnos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/phone">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/email">Contacta con nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/login">Login</a>
+            </li>
+            </ul>
+        </div>
+        {{!-- <a href="/auth/logout">Logout</a> --}}
+    </nav>
 
-    </footer>
-
-
-
- 
-
+</footer>

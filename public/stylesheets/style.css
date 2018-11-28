@@ -70,3 +70,56 @@ justify-content: flex-end;
   cursor: pointer;
   padding: 10px 24px;
 }
+
+.phones {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 950px;
+  height: 350px;
+  margin:40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phones button {
+  background-color: #00B7FF;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+}
+
+.phones-selection {
+  width: 300px;
+}
+
+.phones-table {
+  width: 600px;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00B7FF;
+  color: white;
+}
