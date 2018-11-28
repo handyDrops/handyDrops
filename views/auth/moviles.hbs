@@ -39,6 +39,8 @@
 <div class="phones">
 
   <div class="phones-selection">
+    <h3>Selecciona tu móvil</h3>
+    <br>
     <form action="/phone" method="POST">
       <select name="brand">
         <option>Marca</option>
@@ -71,8 +73,8 @@
     </form>
     <br>
     <br>
-    <h3>¿No aparece tu móvil?</h3>
-    <a href="/email">¡Escríbenos!</a>
+    <h3>¿No encuentras tu modelo?</h3>
+    <button><a href="/email">¡Escríbenos!</a></button>
   </div>
   <div class="phones-table">
     <table id="customers">
@@ -92,11 +94,18 @@
     </table>
     {{/each}}
   </div>
+  
 
-
-  {{!-- <div>
-    <h3>Precio: </h3>
-  </div> --}}
+  <div class="phones-prices">
+   <table id="customers">
+     <tr>
+       <th>Precio</th>
+     </tr>
+      <tr>
+       <td>80€</td>
+     </tr>
+   </table>
+  </div>
 
 
 </div>
