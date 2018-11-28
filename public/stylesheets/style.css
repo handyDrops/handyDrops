@@ -22,3 +22,51 @@ a {
   flex-direction: row; }
 
 /*# sourceMappingURL=style.css.map */
+
+#slideshow > div { 
+  position: absolute; 
+  top: 200px; 
+  left: 0px; 
+  right: 0px; 
+  bottom: 0px; 
+}
+.image-slides {
+width: 1440px;
+height: 600px;
+}
+.container {
+display: flex;
+justify-content: space-between;
+}
+.nav-item {
+display: flex;
+justify-content: flex-end;
+}
+.navbar-brand {
+display: flex;
+justify-content: flex-end;
+}
+
+
+/* formulario */
+
+.email {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 450px;
+  height: 360px;
+  margin:40px;
+
+}
+
+.email button {
+  background-color: #00B7FF;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+}
