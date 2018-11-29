@@ -1,13 +1,14 @@
+<div class="signup-entero">
 <h2>Signup</h2>
-
+<div class="signup-style">
 <form action="/auth/signup" method="POST" id="form-container">
   <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow">
+  <input id="username" type="text" name="username" placeholder="">
 
   <br><br>
 
   <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
+  <input id="password" type="password" name="password" placeholder="">
   
   <br>
   {{#if message }}
@@ -16,18 +17,21 @@
 
   <br><br>
 
-  <button>Create account</button>
-
   <p class="account-message">
     Do you already have an account?
     <a href="/auth/login">Login</a>
   </p>
+  <button>Create account</button>
 </form>
+</div>
+</div>
+
+
 <footer>
     <nav>
         <ul class="nav justify-content-start">
           <a class="navbar-brand" href="/">
-            <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
+            <img src="../img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
             {{!-- <p class="name">
               HandyDrops</p> --}}
         </ul>
