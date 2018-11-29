@@ -1,25 +1,57 @@
-
 <h2>Login</h2>
 
-<form action="/auth/login" method="POST" id="form-container">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow">
+<div class="login-style">
+  <form action="/auth/login" method="POST" id="form-container">
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username" placeholder="">
 
-  <br><br>
+    <br><br>
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
-  <br>
-  {{#if message }}
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" placeholder="">
+    <br>
+    {{#if message }}
     <div class="error-message">{{ message }}</div>
-  {{/if}}
+    {{/if}}
 
-  <br><br>
+    <br><br>
 
-  <button>Login</button>
+    <button>Login</button>
 
-  <p class="account-message">
-    Don't have an account yet?
-    <a href="/auth/signup">Signup</a>
-  </p>
-</form>
+    <p class="account-message">
+      Don't have an account yet?
+      <a href="/auth/signup">Signup</a>
+    </p>
+  </form>
+</div>
+
+<footer>
+    <nav>
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="./img/handydropslogo.png" width="50" height="70" class="d-inline-block align-top" alt="">
+                <p class="name">
+                    HandyDrops</p>
+                <ul class="nav justify-content-end">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link active" href="/service">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/places">Donde encontrarnos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/phone">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/email">Contacta con nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/login">Login</a>
+            </li>
+            </ul>
+        </div>
+        {{!-- <a href="/auth/logout">Logout</a> --}}
+    </nav>
+
+</footer>
