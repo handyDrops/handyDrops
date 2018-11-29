@@ -252,6 +252,7 @@ border: 1px solid gray;
   border-radius: 4px;
 }
 
+
 .email button {
   
   background-color: #00B7FF;
@@ -280,6 +281,8 @@ border: 1px solid gray;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
 
 
 .phones button {
@@ -313,6 +316,7 @@ border: 1px solid gray;
   width: 300px;
   height: 100px;
   margin-left: 350px;
+  margin-top: -100px;
  
 }
 
@@ -337,4 +341,33 @@ border: 1px solid gray;
   text-align: left;
   background-color: #00B7FF;
   color: white;
+}
+
+/* ----login-------- */
+
+.login-style input {
+  background-color: #f8f8f8;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #00B7FF;
+  border-radius: 4px;
+}
+
+.login-style button {
+  
+  background-color: #00B7FF;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+  position: relative;
+  left: 550px;
+  bottom: 240px;
 }
