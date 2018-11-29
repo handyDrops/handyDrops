@@ -1,13 +1,16 @@
-  <head>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+<head>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  </head>
-  <body>
-     <div id="slideshow">
+</head>
+
+<body>
+
+
+  <div id="slideshow">
     <div>
       <img class="image-slides" src="./img/samsung-to-guapo2.jpg">
     </div>
@@ -31,4 +34,49 @@
     }, 5000);
 
   </script>
-  </body>
+  <div class="lorem">
+    <h1>¿Quienes Somos?</h1>
+    <h2>Somos una empresa dedicada a la reparación de smartphones, con una técnica novedosa, una resina especial que
+      aplicada sobre la superficie de una pantalla la repara.
+      <br>
+      Gracias a eso reducimos notablemente los precios y el tiempo de reparación, consiguiendo así reparar un
+      smartphone de gama alta por solo 80$ y en solo 30 minutos!.
+      <br>
+      <br>
+      Si tienes alguna duda pincha <a class="redireccion" href="/servicios">Aquí</a>.
+      <br>
+      Si quieres preguntarnos algo, pincha <a class="redireccion" href="/formulario">Aquí</a>.
+    </h2>
+  </div>
+  <footer>
+    <nav>
+        <ul class="nav justify-content-start">
+          <a class="navbar-brand" href="/">
+            <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
+            {{!-- <p class="name">
+              HandyDrops</p> --}}
+        </ul>
+        <ul class="nav justify-content-end ">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/places">Donde encontrarnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/login">Login</a>
+          </li>
+        </ul>
+      {{!-- <a href="/auth/logout">Logout</a> --}}
+    </nav>
+    <div class="footer">© 2018 Copyright:</a>
+    </div>
+  </footer>
+</body>
