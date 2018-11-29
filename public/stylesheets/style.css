@@ -23,6 +23,7 @@ a {
 /*# sourceMappingURL=style.css.map */
 
 #slideshow > div { 
+
   border: 1px solid gray;
   position: absolute; 
   top: 100px; 
@@ -229,7 +230,7 @@ border: 1px solid gray;
     height: 130px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid  #00B7FF;
+    border: 2px solid  #74afcb;
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: 16px;
@@ -249,14 +250,14 @@ border: 1px solid gray;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #00B7FF;
+  border: 2px solid #74afcb;
   border-radius: 4px;
 }
 
 
 .email button {
   
-  background-color: #00B7FF;
+  background-color: #74afcb;
   border: none;
   color: white;
   text-align: center;
@@ -288,7 +289,7 @@ border: 1px solid gray;
 
 .phones button {
   
-  background-color: #00B7FF;
+  background-color: #74afcb;
   border: none;
   color: white;
   text-align: center;
@@ -340,7 +341,7 @@ border: 1px solid gray;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #00B7FF;
+  background-color: #74afcb;
   color: white;
 }
 
@@ -352,13 +353,12 @@ border: 1px solid gray;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #00B7FF;
+  border: 2px solid #74afcb;
   border-radius: 4px;
 }
 
 .login-style button {
-  
-  background-color: #00B7FF;
+  background-color: #74afcb;
   border: none;
   color: white;
   text-align: center;
@@ -369,6 +369,60 @@ border: 1px solid gray;
   cursor: pointer;
   padding: 10px 24px;
   position: relative;
-  left: 550px;
-  bottom: 240px;
+  left: 500px;
+  bottom: 220px;
+  margin-top: 170px;
+}
+
+.login-entero {
+  margin-top: 200px;
+  margin-left: 350px;
+}
+.account-message {
+margin-left: 150px;
+
+}
+.servicios-body {
+  margin-top: 50px;
+}
+
+.phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phones-selection {
+  margin-top: 100px;
+}
+
+.signup-style input {
+  background-color: #f8f8f8;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #74afcb;
+  border-radius: 4px;
+}
+
+.signup-style button {
+  background-color: #74afcb;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+  position: relative;
+  left: 500px;
+  bottom: 220px;
+  margin-top: 170px;
+}
+
+.signup-entero {
+  margin-top: 200px;
+  margin-left: 350px;
 }
