@@ -1,129 +1,132 @@
-<h2 class="h2-places">Nuestras Tiendas</h2>
- <div class="places-container">
-   <h3 class="segun-tu-ubi">Según tu Ubicación</h3>
-    <legend></legend>
-    {{#each places}}
-    </div class="places-container">
- <style>
-    #map {
+<style>
+  #map {
         height: 500px;
         width: 100%;
        }
     </style>
-     {{!-- <div class="place key">
-         <h2> {{this.name}}</h2>
-          <h3> {{this.adress}}</h3>
-        {{!-- <p>Longitude: <span id="long">{{this.long}}</span> Latitude: <span id="lat">{{this.lat}}</span></p> --}}
-         {{!-- <div class="place-actions-container">
-             <div class="place-actions-container">
-            <form action="/delete-place/{{this.id}}" method="post">
-                <button class="btn btn-danger m-1" type="submit">Delete</button>
-            </form>
-             <form action="/places/edit/{{this.id}}" method="get">
-                <button class="btn btn-primary m-1" type="submit">Edit</button>
-            </form>
-        </div> --}}
-     {{!-- </div> --}}
-{{/each}} 
-<div id="map"></div>
- {{!-- <br>
-<fieldset>
+<h2 class="h2-places">Nuestras Tiendas</h2>
+<div class="places-container">
+  <h3 class="segun-tu-ubi">Según tu Ubicación</h3>
+  <legend></legend>
+  <div id="map"></div>
+  {{!-- {{#each places}}
+</div class="places-container">
+
+<div class="place key">
+  <h2> {{this.name}}</h2>
+  <h3> {{this.adress}}</h3>
+  <p>Longitude: <span id="long">{{this.long}}</span> Latitude: <span id="lat">{{this.lat}}</span></p>
+  <div class="place-actions-container">
+    <div class="place-actions-container">
+      <form action="/delete-place/{{this.id}}" method="post">
+        <button class="btn btn-danger m-1" type="submit">Delete</button>
+      </form>
+      <form action="/places/edit/{{this.id}}" method="get">
+        <button class="btn btn-primary m-1" type="submit">Edit</button>
+      </form>
+    </div>
+
+  </div>
+  {{/each}} --}}
+
+  {{!-- <br>
+  <fieldset>
     <legend>Add a Place</legend>
     <form action="/places/add-place" method="post">
-        <label for="name">Name</label>
-        <input type="text" name="name">
-        <label for="adress">Adress</label>
-        <input type="text" name="adress">
-        </select>
-        <input type="number" step="any" name="lng" id="" value=0>
-        <input type="number" step="any" name="lat" id="" value=0>
-        <button class="btn btn-primary" type="submit">Add</button>
+      <label for="name">Name</label>
+      <input type="text" name="name">
+      <label for="adress">Adress</label>
+      <input type="text" name="adress">
+      </select>
+      <input type="number" step="any" name="lng" id="" value=0>
+      <input type="number" step="any" name="lat" id="" value=0>
+      <button class="btn btn-primary" type="submit">Add</button>
     </form>
     <br>
-</fieldset>   --}}
-  
-<div class="card1">
-  <img class="card-img-top" src="./img/entradahandydrops.png" alt="Serrano Store">
+  </fieldset> --}}
+
+  <div class="card1">
+    <img class="card-img-top" src="./img/entradahandydrops.png" alt="Serrano Store">
 
     <h3 class="card-title">HandyDrops, ABC Serrano</h3>
     <p class="card-text">Calle Serrano, 61, 28006 Madrid</p>
   </div>
 
-<div class="card2">
-  <img class="card-img-top" src="./img/tiendahandydrops.png" alt="Madrid Sur store">
+  <div class="card2">
+    <img class="card-img-top" src="./img/tiendahandydrops.png" alt="Madrid Sur store">
 
     <h3 class="card-title">HandyDrops, Madrid sur</h3>
     <p class="card-text">Av. Pablo Neruda, 91, 28018 Madrid</p>
   </div>
 
-<div class="card3">
-  <img class="card-img-top3" src="./img/centro-comercial-principe.jpg" alt="Principe Pio Store">
+  <div class="card3">
+    <img class="card-img-top3" src="./img/centro-comercial-principe.jpg" alt="Principe Pio Store">
 
     <h3 class="card-title">HandyDrops, Principe Pío</h3>
     <p class="card-text">Paseo de la Florida, 2, 28008 Madrid</p>
   </div>
 
-<div class="card4">
-  <img class="card-img-top4" src="./img/fotonoticia_20150806142554_640.jpg" alt="TresAguas Store">
+  <div class="card4">
+    <img class="card-img-top4" src="./img/fotonoticia_20150806142554_640.jpg" alt="TresAguas Store">
 
     <h3 class="card-title4">HandyDrops, TresAguas</h3>
     <p class="card-text4"> Av. San Martín de Valdeiglesias, 20, 28922 Alcorcón, Madrid</p>
   </div>
 
-<div class="card5">
-  <img class="card-img-top5" src="./img/plazanorte4.jpg" alt="Plaza norte 2 store">
+  <div class="card5">
+    <img class="card-img-top5" src="./img/plazanorte4.jpg" alt="Plaza norte 2 store">
 
     <h3 class="card-title5">HandyDrops, Plaza norte 2</h3>
     <p class="card-text5"> Plaza del Comercio, 11-12, 28703 San Sebastián de los Reyes, Madrid</p>
   </div>
 
-<div class="card6">
-  <img class="card-img-top6" src="./img/klepierre-compra-a-orion-el-centro-comercial-plenilunio-en-madrid-por-375-millones.jpg" alt="Plenilunio Store">
+  <div class="card6">
+    <img class="card-img-top6" src="./img/klepierre-compra-a-orion-el-centro-comercial-plenilunio-en-madrid-por-375-millones.jpg"
+      alt="Plenilunio Store">
 
     <h3 class="card-title">HandyDrops, Plenilunio</h3>
     <p class="card-text">Calle Aracne, s / n, 28022 Madrid</p>
   </div>
 
-<div class="card7">
-  <img class="card-img-top7" src="./img/img_amartiarena_20171020-101720_imagenes_lv_propias_amartiarena_plaza-klXG-U432179556321z4D-992x558@LaVanguardia-Web.jpg" alt="Plaza Río 2 Store">
+  <div class="card7">
+    <img class="card-img-top7" src="./img/img_amartiarena_20171020-101720_imagenes_lv_propias_amartiarena_plaza-klXG-U432179556321z4D-992x558@LaVanguardia-Web.jpg"
+      alt="Plaza Río 2 Store">
 
     <h3 class="card-title">HandyDrops, Plaza Río 2</h3>
     <p class="card-text">Av del Manzanares, 210, 28026 Madrid</p>
-</div>
-    <script>let places = {{{json places}}}</script>
-    <script src="./javascripts/map.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key={{places.cl4v3}}&callback=initMap"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <footer>
+  </div>
+  <script>let places = {{{ json places }}}</script>
+  <script src="./javascripts/map.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key={{places.cl4v3}}&callback=initMap"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <footer>
     <nav>
-        <ul class="nav justify-content-start">
-          <a class="navbar-brand" href="/">
-            <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
-        
-        </ul>
-        <ul class="nav justify-content-end">
-          </a>
-          <li class="nav-item">
-            <a class="nav-link active" href="/service">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/places">Donde encontrarnos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/phone">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/email">Contacta con Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/auth/login">Login</a>
-          </li>
-        </ul>
+      <ul class="nav justify-content-start">
+        <a class="navbar-brand" href="/">
+          <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
 
-      
+      </ul>
+      <ul class="nav justify-content-end">
+        </a>
+        <li class="nav-item">
+          <a class="nav-link active" href="/service">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/places">Donde encontrarnos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/phone">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/email">Contacta con Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/login">Login</a>
+        </li>
+      </ul>
+
+
     </nav>
     <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
     </div>
   </footer>
-
-

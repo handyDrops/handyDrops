@@ -57,7 +57,7 @@ hbs.registerHelper('json', function(context) {
 
 hbs.registerHelper('cost', function(context) {
   if(context == null)return ''
-  else return context.includes('iPhone') ? '80' : '40'
+  else return context.includes('Plus')? '80' : '60'
   
 });
   
