@@ -1,46 +1,142 @@
+{{!--
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"> --}}
+{{!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    Marca
+  </button>
+  <div name="brand" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" value="Apple">Apple</a>
+    <a class="dropdown-item" value="Huawei">Huawei</a>
+    <a class="dropdown-item" value="LG">LG</a>
+    <a class="dropdown-item" value="Samsung">Samsung</a>
+    <a class="dropdown-item" value="Sony">Sony</a>
+  </div>
+</div>
 
-<form action="/phone" method="POST">
-<p>Marca</p>
-   <select name="brand">    
-       <option value="Apple">Apple</option>
-       <option value="Samsung">Samsung</option>
-       <option value="Sony">Sony</option>
-       <option value="LG">LG</option>
-       <option value="Huawei">Huawei</option>
-       <option value="Xiaomi">Xiamoi</option>
-   </select>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    Modelo
+  </button>
+  <div name="device" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" value="Iphone 5S">Iphone5</a>
+    <a class="dropdown-item" value="Iphone 7 plus">Iphone7</a>
+    <a class="dropdown-item" value="Iphone XR">IphoneX</a>
+    <a class="dropdown-item" value="P10 plus">P10</a>
+    <a class="dropdown-item" value="P10 lite">P10Lite</a>
+    <a class="dropdown-item" value="P20">P20</a>
+    <a class="dropdown-item" value="P20 lite">P20Lite</a>
+    <a class="dropdown-item" value="G6">G6</a>
+    <a class="dropdown-item" value="Q7">Q7</a>
+    <a class="dropdown-item" value="Galaxy S5 plus">GalaxyS5</a>
+    <a class="dropdown-item" value="Galaxy S8+">GalaxyS8</a>
+    <a class="dropdown-item" value="Xperia XZ2 compact">XperiaXZ</a>
+  </div>
+</div> --}}
+
+<div class="phones">
+
+  <div class="phones-selection">
+    <h3>Selecciona tu móvil</h3>
     <br>
-    <p>Modelo</p> 
-    <input type="text" name="device">
+    <form action="/phone" method="POST">
+      <select name="brand">
+        <option>Marca</option>
+        <option value="Apple">Apple</option>
+        <option value="Huawei">Huawei</option>
+        <option value="LG">LG</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Sony">Sony</option>
+      </select>
+      <br>
+      <br>
+      <select name="device">
+        <option>Modelo</option>
+        <option value="Iphone 5S">Iphone5</option>
+        <option value="Iphone 7 plus">Iphone7</option>
+        <option value="Iphone XR">IphoneX</option>
+        <option value="P10 plus">P10</option>
+        <option value="P10 lite">P10Lite</option>
+        <option value="P20">P20</option>
+        <option value="P20 lite">P20Lite</option>
+        <option value="G6">G6</option>
+        <option value="Q7">Q7</option>
+        <option value="Galaxy S5 plus">GalaxyS5</option>
+        <option value="Galaxy S8+">GalaxyS8</option>
+        <option value="Xperia XZ2 compact">XperiaXZ</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit">tu móvil</button>
+    </form>
     <br>
     <br>
-    <button type="submit">tu móvil</button>
-</form>
+    <h3>¿No encuentras tu modelo?</h3>
+    <button><a href="/email">¡Escríbenos!</a></button>
+  </div>
+  <div class="phones-table">
+    <table id="customers">
+      <tr>
+        <th>Modelo</th>
+        <th>Dimensión</th>
+        <th>Pantalla</th>
+        <th>Resolución</th>
+      </tr>
+      {{#each data}}
+      <tr>
+        <td>{{this.DeviceName}}</td>
+        <td>{{this.dimensions}}</td>
+        <td>{{this.type}}</td>
+        <td>{{this.resolution}}</td>
+      </tr>
+    </table>
+    {{/each}}
+  </div>
+  
 
-<br>
-<br>
-
-{{#each data}}
-<table>
-  <tr>
-    <td>Modelo</td>
-    <td>Dimensión</td>
-    <td>Pantalla</td>
-    <td>Resolución</td>
-  </tr>
-  <tr>
-    <th>{{this.DeviceName}}</th>
-    <th>{{this.dimensions}}</th>
-    <th>{{this.type}}</th>
-    <th>{{this.resolution}}</th>
-  </tr>
-</table>
-{{/each}}
-
-<br>
-<br>
-<h3>Tarifas: </h3>
+  <div class="phones-prices">
+   <table id="customers">
+     <tr>
+       <th>Precio</th>
+     </tr>
+      <tr>
+       <td>80€</td>
+     </tr>
+   </table>
+  </div>
 
 
+</div>
 
+<footer>
+  <nav>
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="./img/handydropslogo.png" width="50" height="70" class="d-inline-block align-top" alt="">
+        <p class="name">
+          HandyDrops</p>
+        <ul class="nav justify-content-end">
+      </a>
+      <li class="nav-item">
+        <a class="nav-link active" href="/service">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/places">Donde encontrarnos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/phone">Precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/email">Contacta con nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/login">Login</a>
+      </li>
+      </ul>
+    </div>
+    {{!-- <a href="/auth/logout">Logout</a> --}}
+  </nav>
 
+</footer>

@@ -3,7 +3,7 @@ const passport = require('passport');
 const router = express.Router();
 const User = require("../models/User");
 
-//const transporter = require('../mail/transporter');
+const transporter = require('../mail/transporter');
 
 // Bcrypt to encrypt passwords
 const bcrypt = require("bcrypt");
@@ -28,16 +28,9 @@ router.get("/signup", (req, res, next) => {
 router.post("/signup", (req, res, next) => {
   const username = req.body.username;
   const password = req.body.password;
-  const email = req.body.email;
   if (username === "" || password === "") {
     res.render("auth/signup", { message: "Indicate username and password" });
     return;
-  }
-
-  const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let confirmationCode = '';
-  for (let i = 0; i < 25; i++) {
-      confirmationCode += characters[Math.floor(Math.random() * characters.length )];
   }
 
   User.findOne({ username }, "username", (err, user) => {
@@ -49,30 +42,33 @@ router.post("/signup", (req, res, next) => {
     const salt = bcrypt.genSaltSync(bcryptSalt);
     const hashPass = bcrypt.hashSync(password, salt);
 
-    const newUser = new User({
-      username,
-      password: hashPass,
-      confirmationCode,
-      email,
-    });
+    const name = req.body.name;
+    const email = req.body.email;
+    const msg = req.body.msg;
 
+  const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let confirmationCode = '';
+  for (let i = 0; i < 25; i++) {
+      confirmationCode += characters[Math.floor(Math.random() * characters.length )];
+  }
+
+    const newUser = new User({
+     
+      name,
+      email,
+      msg,
+      confirmationCode,
+  
+    });
 
 
     newUser.save()
     .then(() => {
-      transporter.sendMail({
-        from: '<nfake6162@gmail.com>',
-        to: email, 
-        subject: 'Consulta tarifas', 
-        text: 'Handy Drops',
-        html: `<b>Handy Drops</b>`
-      })
-      .then(info => res.redirect('/'))
-      .catch(error => console.log(error));
+
       res.redirect("/");
     })
     .catch(err => {
-      res.render("auth/signup", { message: "Something went wrong" });
+      res.render("places/formulario", { message: "Something went wrong" });
     })
   });
 });

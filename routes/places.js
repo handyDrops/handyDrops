@@ -67,4 +67,5 @@ router.get("/getPlaces", (req, res) => {
     })
     .catch(err => err);
 });
+
 module.exports = router;
