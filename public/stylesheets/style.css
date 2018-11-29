@@ -50,6 +50,30 @@ height: 600px;
  .lorem {
    margin-top: 850px;
  }
+
+ .footer {
+  background: #061D25;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  left: 50;
+  bottom: 0;
+  height: 30px;
+  margin-top: 70px;
+}
+
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  
+  transition: all .5s ease;
+}
+
+.footer a:hover {
+  color: #74afcb;
+}
+/* 
  .footer {
    position: fixed;
 margin-top: 70px;
@@ -61,7 +85,7 @@ margin-top: 70px;
   color: white;
   border: 1px solid rgba(128, 128, 128, 0.5);
   text-align: center;
-}
+} */
 
 nav {
   position: fixed;
@@ -383,7 +407,7 @@ margin-left: 150px;
 
 }
 .servicios-body {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .phones {
@@ -426,3 +450,21 @@ margin-left: 150px;
   margin-top: 200px;
   margin-left: 350px;
 }
+
+
+
+.email {
+margin-top: 70px;
+  margin-left: 400px;
+}
+
+.g-recaptcha {
+  margin-top: 250px;
+  margin-left: -480px;
+}
+
+.submit-formulario {
+  
+  margin-left: -390px;
+}
+

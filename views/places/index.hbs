@@ -1,3 +1,5 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
 <style>
   #map {
         height: 500px;
@@ -12,10 +14,10 @@
   {{!-- {{#each places}}
 </div class="places-container">
 
-<div class="place key">
+ <div class="place key">
   <h2> {{this.name}}</h2>
   <h3> {{this.adress}}</h3>
-  <p>Longitude: <span id="long">{{this.long}}</span> Latitude: <span id="lat">{{this.lat}}</span></p>
+   <p>Longitude: <span id="long">{{this.long}}</span> Latitude: <span id="lat">{{this.lat}}</span></p> 
   <div class="place-actions-container">
     <div class="place-actions-container">
       <form action="/delete-place/{{this.id}}" method="post">
@@ -24,12 +26,12 @@
       <form action="/places/edit/{{this.id}}" method="get">
         <button class="btn btn-primary m-1" type="submit">Edit</button>
       </form>
-    </div>
+    </div> 
+    
+  </div> 
+  {{/each}}
 
-  </div>
-  {{/each}} --}}
-
-  {{!-- <br>
+   <br>
   <fieldset>
     <legend>Add a Place</legend>
     <form action="/places/add-place" method="post">
@@ -43,7 +45,7 @@
       <button class="btn btn-primary" type="submit">Add</button>
     </form>
     <br>
-  </fieldset> --}}
+  </fieldset>  --}}
 
   <div class="card1">
     <img class="card-img-top" src="./img/entradahandydrops.png" alt="Serrano Store">
@@ -99,34 +101,40 @@
   <script src="./javascripts/map.js" type="text/javascript"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key={{places.cl4v3}}&callback=initMap"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <footer>
     <nav>
       <ul class="nav justify-content-start">
         <a class="navbar-brand" href="/">
           <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
-
       </ul>
       <ul class="nav justify-content-end">
         </a>
         <li class="nav-item">
-          <a class="nav-link active" href="/service">Servicios</a>
+          <a class="nav-link active" href="/service"><b>Servicios</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/places">Donde encontrarnos</a>
+          <a class="nav-link active" href="/places"><b>Donde encontrarnos</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/phone">Precios</a>
+          <a class="nav-link" href="/phone"><b>Precios</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/email">Contacta con Nosotros</a>
+          <a class="nav-link" href="/email"><b>Contacta con Nosotros</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/auth/login">Login</a>
+          <a class="nav-link" href="/auth/login"><b>Login</b></a>
         </li>
       </ul>
-
-
+      {{!-- <a href="/auth/logout">Logout</a> --}}
+      <legend></legend>
     </nav>
-    <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
+   
+{{!-- <footer class="footer">
+  <div class="container text-center">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
     </div>
-  </footer>
+  </footer> --}}

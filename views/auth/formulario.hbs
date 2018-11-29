@@ -3,7 +3,7 @@
         <form action="/email" method="post">
             <br>
             <div>
-                <label for="name">Nombre:</label>
+                <label for="name-formulario">Nombre:</label>
                 <input type="text" name="name" />
             </div>
             <br>
@@ -19,8 +19,8 @@
             <br>
             <div class="g-recaptcha" data-sitekey="6Levk30UAAAAAIkPrCV379glE0Mrt-wrIxvzhevb"></div>
             <br>
-            <div>
-                <button type="submit">Enviar</button>
+            <div class="submit-formulario">
+                <button type="submit-formulario">Enviar</button>
             </div>
         </form>
     
@@ -35,22 +35,25 @@
         <ul class="nav justify-content-end">
           </a>
           <li class="nav-item">
-            <a class="nav-link active" href="/service">Servicios</a>
+            <a class="nav-link active" href="/service"><b>Servicios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/places">Donde encontrarnos</a>
+            <a class="nav-link active" href="/places"><b>Donde encontrarnos</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/phone">Precios</a>
+            <a class="nav-link" href="/phone"><b>Precios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/email">Contacta con Nosotros</a>
+            <a class="nav-link" href="/email"><b>Contacta con Nosotros</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/auth/login">Login</a>
+            <a class="nav-link" href="/auth/login"><b>Login</b></a>
           </li>
         </ul>
+        <legend></legend>
+      {{!-- <a href="/auth/logout">Logout</a> --}}
+      
     </nav>
-    <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
+    {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
     </div>
-  </footer>
+  </footer> --}}
