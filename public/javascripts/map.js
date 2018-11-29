@@ -8,7 +8,6 @@ function initMap() {
   });
   
   places.forEach(e => {
-    console.log(e)
     const marker = new google.maps.Marker({
       position: { lat:e.location.lat, lng:e.location.lng },
       map,
