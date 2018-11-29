@@ -46,33 +46,33 @@
         <th>Dimensión</th>
         <th>Pantalla</th>
         <th>Resolución</th>
+        <th><h3><b>Precio</b></h3></th>
       </tr>
+      {{#if data}}
       {{#each data}}
       <tr>
         <td>{{this.DeviceName}}</td>
         <td>{{this.dimensions}}</td>
         <td>{{this.type}}</td>
         <td>{{this.resolution}}</td>
+        <td>{{cost this.DeviceName}} €</td>
       </tr>
     </table>
     {{/each}}
   </div>
   
-
-  <div class="phones-prices">
+{{/if}}
+  {{!-- <div class="phones-prices">
    <table id="customers">
      <tr>
        <th>Precio</th>
      </tr>
       <tr>
-       <td>80€</td>
+       <td></td>
      </tr>
    </table>
-  </div>
-
-
+  </div> --}}
 </div>
-
 <footer>
     <nav>
         <ul class="nav justify-content-start">

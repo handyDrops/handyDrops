@@ -54,6 +54,12 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 hbs.registerHelper('json', function(context) {
   return JSON.stringify(context);
 });
+
+hbs.registerHelper('cost', function(context) {
+  if(context == null)return ''
+  else return context.includes('iPhone') ? '80' : '40'
+  
+});
   
 
 // default value for title local

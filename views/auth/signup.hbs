@@ -1,62 +1,58 @@
 <div class="signup-entero">
-<h2>Signup</h2>
-<div class="signup-style">
-<form action="/auth/signup" method="POST" id="form-container">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="">
+  <h2>Signup</h2>
+  <div class="signup-style">
+    <form action="/auth/signup" method="POST" id="form-container">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" placeholder="">
 
-  <br><br>
+      <br><br>
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="">
-  
-  <br>
-  {{#if message }}
-    <div class="error-message">{{ message }}</div>
-  {{/if}}
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="">
 
-  <br><br>
+      <br>
+      {{#if message }}
+      <div class="error-message">{{ message }}</div>
+      {{/if}}
 
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/auth/login">Login</a>
-  </p>
-  <button>Create account</button>
-</form>
-</div>
+      <br><br>
+
+      <p class="account-message">
+        Do you already have an account?
+        <a href="/auth/login">Login</a>
+      </p>
+      <button>Create account</button>
+    </form>
+  </div>
 </div>
 
 
 <footer>
-    <nav>
-        <ul class="nav justify-content-start">
-          <a class="navbar-brand" href="/">
-            <img src="../img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
-            {{!-- <p class="name">
-              HandyDrops</p> --}}
-        </ul>
-        <ul class="nav justify-content-end">
-          </a>
-          <li class="nav-item">
-            <a class="nav-link active" href="/service">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/places">Donde encontrarnos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/phone">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/email">Contacta con Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/auth/login">Login</a>
-          </li>
-        </ul>
-      {{!-- <a href="/auth/logout">Logout</a> --}}
-      
-    </nav>
-    <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
-    </div>
-  </footer>
+  <nav>
+    <ul class="nav justify-content-start">
+      <a class="navbar-brand" href="/">
+        <img src="../img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
+    </ul>
+    <ul class="nav justify-content-end">
+      </a>
+      <li class="nav-item">
+        <a class="nav-link active" href="/service">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/places">Donde encontrarnos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/phone">Precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/email">Contacta con Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/login">Login</a>
+      </li>
+    </ul>
 
+  </nav>
+  <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
+  </div>
+</footer>

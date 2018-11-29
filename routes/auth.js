@@ -28,6 +28,7 @@ router.get("/signup", (req, res, next) => {
 router.post("/signup", (req, res, next) => {
   const username = req.body.username;
   const password = req.body.password;
+  console.log(req.body)
   if (username === "" || password === "") {
     res.render("auth/signup", { message: "Indicate username and password" });
     return;
@@ -42,24 +43,12 @@ router.post("/signup", (req, res, next) => {
     const salt = bcrypt.genSaltSync(bcryptSalt);
     const hashPass = bcrypt.hashSync(password, salt);
 
-    const name = req.body.name;
-    const email = req.body.email;
-    const msg = req.body.msg;
-
-  const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let confirmationCode = '';
-  for (let i = 0; i < 25; i++) {
-      confirmationCode += characters[Math.floor(Math.random() * characters.length )];
-  }
-
     const newUser = new User({
-     
-      name,
-      email,
-      msg,
-      confirmationCode,
-  
+      username,
+      password:hashPass
     });
+
+    console.log(newUser)
 
 
     newUser.save()
