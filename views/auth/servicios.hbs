@@ -3,25 +3,32 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
    <title>Document</title>
  </head>
  <body class="servicios-body">
   <h1 class="phone-title"> <img src="./img/movilservicios.png" width="80" height="80"alt=""> Smartphones </h1>
+  <br>
      <h4>HandyDrops está principalmente enfocado al servicio de reparación de móviles. Nuestro servicio se caracteriza, principalmente por su rapidez (en tan solo 30 minutos) y su coste (no más de 80$). 
        <br>
        <br>
 Si desea consultar el precio de la reparación de su smartphone pinche <a class="redireccion" href="/phone"><b>Aquí</b></a>.<h4>
   <br>
     <h1 class="tablet-title"> <img src="./img/tabletservicios.png" width="80" height="80"alt=""> Tablets </h1>
+    <br>
      <h4>Las tablets son uno de los aparatos más utilizados en el ámbito empresarial, por ello, en Handy Drops hemos querido adaptar nuestras máquinas para el servicio de reparación de cualquier tipo de tablet. Su coste es algo más elevado respecto a los smartphones pero sigue siendo la mejor opción si lo que quieres es ahorrar tiempo y costes en la reparación.
        <br>
        <br>
-Si desea consultar el precio de la reparación de su tablet pinche <a class="redireccion" href="/phone"><b>Aquí</b></a>.<p>
+Si desea consultar el precio de la reparación de su tablet pinche <a class="redireccion" href="/email"><b>Aquí</b></a>.<p>
       <br>
        <h1 class="computer-title"> <img src="./img/ordenadorservicios.png" width="80" height="80"alt="">Ordenadores</h1>
+       <br>
  <h4>Si bien es cierto que los ordenadores son un bien que parece irrompible, hemos notado que algunos de nuestros clientes han tenido que cambiar de ordenador debido a roturas y rallajos en la pantalla de su monitor u ordenador. Por ello en HandyDrops nos hemos adaptado para ofrecerte un servicio de reparación de calidad.<br>
        <h4>Pide cita o presupuesto <a class="redireccion" href="/email"><b>Aquí</a>.</b></h4>
        </h4>
+       <br>
        <br>
        <legend></legend>
        <br>
@@ -40,7 +47,7 @@ Si desea consultar el precio de la reparación de su tablet pinche <a class="red
         <h5>Por favor, envíanos tus preguntas <a class="redireccion" href="/email"><b>Aquí</b></a>.</h5>
  </body>
  <footer>
-    <nav>
+    <nav class="borde-nav">
         <ul class="nav justify-content-start">
           <a class="navbar-brand" href="/">
             <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
@@ -51,22 +58,32 @@ Si desea consultar el precio de la reparación de su tablet pinche <a class="red
             <a class="nav-link active" href="/service"><b>Servicios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/places"><b>Donde encontrarnos</b></a>
+            <a class="nav-link active" href="/places"><b>Dónde encontrarnos</b></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/phone"><b>Precios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/email"><b>Contacta con Nosotros</b></a>
+            <a class="nav-link" href="/email"><b>Contacta con nosotros</b></a>
           </li>
           <li class="nav-item">
+          {{#if myUser}}
+            <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
+            {{else}}
             <a class="nav-link" href="/auth/login"><b>Login</b></a>
+            {{/if}}
           </li>
         </ul>
-      {{!-- <a href="/auth/logout">Logout</a> --}}
-           <legend></legend>
+     
     </nav>
-    {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
-    </div>
-  </footer> --}}
+    <footer class="footer">
+  
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/handydrops"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  
+    
+  </footer> 
  </html>
