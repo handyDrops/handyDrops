@@ -5,7 +5,7 @@ const User = require("../models/User");
 
 const transporter = require('../mail/transporter');
 
-// Bcrypt to encrypt passwords
+
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
 

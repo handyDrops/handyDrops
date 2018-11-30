@@ -28,7 +28,6 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
-// Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -60,12 +59,7 @@ hbs.registerHelper('cost', function(context) {
   else return context.includes('Plus')? '80' : '60'
   
 });
-  
 
-// default value for title local
-
-
-// Enable authentication using session + passport
 app.use(session({
   secret: 'irongenerator',
   resave: true,
