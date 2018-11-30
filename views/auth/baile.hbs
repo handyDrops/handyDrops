@@ -1,63 +1,15 @@
-<div class="screen"></div>
-<ul class="dance-animation">
-  <li class="dance-frame dance-animation--dancer1"></li>
-  <li class="dance-frame dance-animation--dancer2"></li>
-  <li class="dance-frame dance-animation--dancer3"></li>
-  <li class="dance-frame dance-animation--dancer4"></li>
-  <li class="dance-frame dance-animation--dancer5"></li>
-  <li class="dance-frame dance-animation--dancer6"></li>
-  <li class="dance-frame dance-animation--dancer7"></li>
-  <li class="dance-frame dance-animation--dancer8"></li>
-  <li class="dance-frame dance-animation--dancer9"></li>
-  <li class="dance-frame dance-animation--dancer10"></li>
-  <li class="dance-frame dance-animation--dancer11"></li>
-</ul>
-<iframe width="0" height="0" src="https://www.1youtuberepeater.com/watch?v=kWvbJsB0OBc&name=Tom+Jones+Its+Not+Unusual+With+Lyrics" frameborder="0" allowfullscreen></iframe>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
 
-<div class="play-music">
-  <div id="music-animation" class="music-animation">
-    <span class="bar bar1"></span>
-    <span class="bar bar2"></span>
-    <span class="bar bar3"></span>
-    <span class="bar bar4"></span>
-    <span class="bar bar5"></span>
-  </div>
-  <div class="music-toggle"><a onClick="togglePlay()" id="toggle" data-text-swap="Music on">Music off</a></div>
-</div>
-<audio id="music" loop="loop" src="https://web.opendrive.com/api/v1/download/file.json/OV84MDUyNTM1NF9aSXB6Sw?inline=1"></audio>
 
-<script>var music = document.getElementById("music");
-var isPlaying = false;
-music.volume = 0.2;
-function togglePlay() {
-  if (isPlaying) {
-    music.pause()
-  } else {
-    music.play();
-  }
-};
-music.onplaying = function() {
-  isPlaying = true;
-  document.getElementById("music-animation").classList.add('on')
-};
-music.onpause = function() {
-  isPlaying = false;
-  document.getElementById("music-animation").classList.remove('on')
-};
 
-var button = document.getElementById("toggle");
-button.addEventListener('click', function() {
-  if (button.getAttribute("data-text-swap") == button.innerHTML) {
-    button.innerHTML = button.getAttribute("data-text-original");
-  } else {
-    button.setAttribute("data-text-original", button.innerHTML);
-    button.innerHTML = button.getAttribute("data-text-swap");
-  }
-}, false);
-</script>
+
+
 
 <footer>
-    <nav>
+    <nav class="borde-nav">
         <ul class="nav justify-content-start">
           <a class="navbar-brand" href="/">
             <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
@@ -81,8 +33,14 @@ button.addEventListener('click', function() {
           </li>
         </ul>
       {{!-- <a href="/auth/logout">Logout</a> --}}
-           <legend></legend>
     </nav>
-    {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
-    </div>
-  </footer> --}}
+   <footer class="footer">
+  
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/handydrops"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  
+    
+  </footer> 

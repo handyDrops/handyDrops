@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
@@ -48,30 +48,33 @@ height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
  .lorem {
-   margin-top: 850px;
+   margin-top: 800px;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 70px;
  }
 
  .footer {
-  background: #061D25;
-  padding: 10px 0;
+  background: #74afcb;
+  padding: 3px ;
   position: fixed;
-  width: 100%;
-  left: 50;
+  width: 100vw;
+  left: 0;
   bottom: 0;
   height: 30px;
-  margin-top: 70px;
+  border-top: 1px solid gray;
 }
 
 .footer a {
-  color: #70726F;
+  color: white;
   font-size: 20px;
-  padding: 10px;
-  
+  padding: 15px;
+  width: 100%;
   transition: all .5s ease;
 }
 
 .footer a:hover {
-  color: #74afcb;
+  color: black;
 }
 /* 
  .footer {
@@ -115,6 +118,7 @@ justify-content: flex-end;
   width: 500px;
   height: 500px;
   margin-top: 40px;
+  margin-left: 150px;
 
 }
 .card2 {
@@ -135,6 +139,7 @@ justify-content: flex-end;
   width: 500px;
   height: 500px;
   margin-top: 40px;
+  margin-left: 150px;
 }
 .card4 {
   color: white;
@@ -155,6 +160,7 @@ justify-content: flex-end;
   width: 500px;
   height: 500px;
   margin-top: 40px;
+  margin-left: 150px;
 
 }
 .card6 {
@@ -171,11 +177,23 @@ border: 1px solid gray;
 .card7 {
   color: white;
   background-color: #74afcb;
-  margin-left: 400px;
+  margin-left: 50px;
   border: 1px solid gray;
   width: 500px;
   height: 500px;
   margin-top: 40px;
+  margin-left: 150px;
+}
+
+.card8 {
+  color: white;
+  background-color: #74afcb;
+  margin-left: 750px;
+border: 1px solid gray;
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+  margin-top: -500px;
 
 }
 .home-footer {
@@ -226,12 +244,24 @@ border: 1px solid gray;
   height: 350px;
   width: 100%;
 }
+.card-img-top8 {
+  height: 350px;
+  width: 100%;
+}
+.card-text8 {
+  margin-top:10px;
+  margin-left: 150px;
+}
+.card-title8 {
+  margin-top: 30px;
+  margin-left: 90px;
+}
 .nav-guia {
   margin-top:1000px;
   margin-bottom: 30px;
 }
 .segun-tu-ubi {
-  margin-left: 550px;
+  margin-left: 600px;
 }
 
 /* formulario */
@@ -240,13 +270,14 @@ border: 1px solid gray;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   width: 900px;
   height: 360px;
-  margin:40px;
+
 }
 
 .email form {
   width: 450px;
   height: 360px;
-  margin:20px;
+  margin-top:120px;
+  margin-left: 70px;
 }
 
 .email textarea {
@@ -302,7 +333,7 @@ border: 1px solid gray;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   width: 1050px;
   height: 350px;
-  margin:40px;
+  margin: 150px ;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -407,7 +438,11 @@ margin-left: 150px;
 
 }
 .servicios-body {
-  margin-top: 70px;
+
+  margin-top: 120px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 70px;
 }
 
 .phones {
@@ -468,3 +503,14 @@ margin-top: 70px;
   margin-left: -390px;
 }
 
+.borde-nav {
+  border-bottom: 1px solid gray;
+}
+
+.resina {
+  margin-left: 50px;
+}
+
+.video {
+  margin-left: 200px;
+}

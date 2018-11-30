@@ -5,10 +5,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 
 <body>
-
 
   <div id="slideshow">
     <div>
@@ -32,25 +33,33 @@
         .end()
         .appendTo('#slideshow');
     }, 5000);
-
   </script>
   <div class="lorem">
-    <h1>¿Quienes Somos?</h1>
-    <h2>Somos una empresa dedicada a la reparación de smartphones, con una técnica novedosa, una resina especial que
+    <h2>¿Quiénes Somos?</h2>
+    <h3>Somos una empresa dedicada a la reparación de smartphones, con una técnica novedosa, una resina especial que
       aplicada sobre la superficie de una pantalla la repara.
       <br>
+      <img class="resina" src="./img/resina.jpg"  height="450" width="1000">
+      <br>
       Gracias a eso reducimos notablemente los precios y el tiempo de reparación, consiguiendo así reparar un
-      smartphone de gama alta por solo 80$ y en solo 30 minutos!.
+      smartphone de gama alta por solo 80€ y  <b>¡en solo 30 minutos!</b>  como podéis ver en el video.
       <br>
+    <video class="video" src="./img/video Handydrops.mov" poster="./img/imagenvideo.png" controls></video>
+<video src="video.mp4" autoplay muted loop></video>
       <br>
+      
       Si tienes alguna duda pincha <a class="redireccion" href="/service">Aquí</a>.
       <br>
+      <br>
       Si quieres preguntarnos algo, pincha <a class="redireccion" href="/email">Aquí</a>.
-      hola pincha aqui <a class="redireccion" href="/baile">aqui</a>
-    </h2>
+    </h3>
   </div>
+
+
+
+
   <footer>
-    <nav>
+    <nav class="borde-nav">
         <ul class="nav justify-content-start">
           <a class="navbar-brand" href="/">
             <img src="./img/logochulo.png" width="200" height="80" class="d-inline-block align-top" alt="">
@@ -61,23 +70,29 @@
             <a class="nav-link active" href="/service"><b>Servicios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/places"><b>Donde encontrarnos</b></a>
+            <a class="nav-link active" href="/places"><b>Dónde encontrarnos</b></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/phone"><b>Precios</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/email"><b>Contacta con Nosotros</b></a>
+            <a class="nav-link" href="/email"><b>Contacta con nosotros</b></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/auth/login"><b>Login</b></a>
           </li>
         </ul>
-      {{!-- <a href="/auth/logout">Logout</a> --}}
-           
+      {{!-- <a href="/auth/logout">Logout</a> --}}          
     </nav>
-    {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
-    </div>
-  </footer> --}}
+    <footer class="footer">
+  
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/handydrops"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  
+    
+  </footer> 
 
 </body>
