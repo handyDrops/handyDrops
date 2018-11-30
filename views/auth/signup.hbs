@@ -52,14 +52,15 @@
             <a class="nav-link" href="/email"><b>Contacta con nosotros</b></a>
           </li>
           <li class="nav-item">
+          {{#if myUser}}
+            <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
+            {{else}}
             <a class="nav-link" href="/auth/login"><b>Login</b></a>
+            {{/if}}
           </li>
         </ul>
-      {{!-- <a href="/auth/logout">Logout</a> --}}
     </nav>
-    {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
-    </div>
-  </footer> --}}
+  
 
   </nav>
  <footer class="footer">

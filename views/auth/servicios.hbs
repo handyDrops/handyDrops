@@ -67,10 +67,14 @@ Si desea consultar el precio de la reparación de su tablet pinche <a class="red
             <a class="nav-link" href="/email"><b>Contacta con nosotros</b></a>
           </li>
           <li class="nav-item">
+          {{#if myUser}}
+            <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
+            {{else}}
             <a class="nav-link" href="/auth/login"><b>Login</b></a>
+            {{/if}}
           </li>
         </ul>
-      {{!-- <a href="/auth/logout">Logout</a> --}}
+     
     </nav>
     <footer class="footer">
   
