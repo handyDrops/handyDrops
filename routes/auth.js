@@ -10,20 +10,18 @@ const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
 
 
-// const ensureLogin    = require('connect-ensure-login');
+const ensureLogin    = require('connect-ensure-login');
 
-// router.get("/formulario", ensureLogin.ensureLoggedIn(), (req, res) => {
-//   res.render("auth/formulario", { user: req.user });
-// });
-
-
+router.get("/descuentos", ensureLogin.ensureLoggedIn(), (req, res) => {
+  res.render("auth/descuentos", { user: req.user });
+});
 
 router.get("/login", (req, res, next) => {
   res.render("auth/login", { "message": req.flash("error") });
 });
 
 router.post("/login", passport.authenticate("local", {
-  successRedirect: "/",
+  successRedirect: "/auth/descuentos",
   failureRedirect: "/auth/login",
   failureFlash: true,
   passReqToCallback: true
@@ -56,8 +54,6 @@ router.post("/signup", (req, res, next) => {
       password:hashPass
     });
 
-    console.log(newUser)
-
 
     newUser.save()
     .then(() => {
@@ -69,15 +65,6 @@ router.post("/signup", (req, res, next) => {
     })
   });
 });
-
-// -----------private-page------
-
-// router.post("/login", passport.authenticate('local', {
-//   successRedirect: "auth/formulario",
-//   failureRedirect: "/login",
-//   failureFlash: true,
-//   passReqToCallback: true,
-// }));
 
 router.get("/logout", (req, res) => {
   req.logout();

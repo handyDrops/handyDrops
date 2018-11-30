@@ -48,7 +48,7 @@ height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
  .lorem {
-   margin-top: 850px;
+   margin-top: 670px;
  }
 
  .footer {
@@ -468,3 +468,19 @@ margin-top: 70px;
   margin-left: -390px;
 }
 
+.descuentos {
+  background-color: #f8f8f8;
+  width: 40%;
+  padding: 20px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #74afcb;
+  border-radius: 4px;
+  margin-top: 130px;
+  margin-left: 350px;
+  
+}
+
+.descuentos h4 {
+  color: red;
+}

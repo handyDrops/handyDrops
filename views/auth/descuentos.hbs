@@ -1,32 +1,16 @@
-<div class="login-entero">
-<h2>Login</h2>
 
-<div class="login-style">
-  <form action="/auth/login" method="POST" id="form-container">
-    <label for="username">Username</label>
-    <input id="username" type="text" name="username" placeholder="">
+{{#if user}}
+ 
+ <div class="descuentos">
+   
+   <h1><b>¡Bienvenido a HandyDrops!</b></h1>
 
-    <br><br>
+   <h3>Disfruta de un 20% de descuento por haberte registrado en nuestra web.</h3>
 
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password" placeholder="">
-    <br>
-    {{#if message }}
-    <div class="error-message">{{ message }}</div>
-    {{/if}}
+   <h2><b>Código de descuento: </b></h2> <h4>43ert556gg76hhj</h4>
 
-    <br><br>
- <p class="account-message">
-      Don't have an account yet?
-      <a href="/auth/signup">Signup</a>
-      
-    </p>
-    <button>Login</button>
 
-    
-  </form>
-</div>
-</div>
+ </div>
 
 
 <footer>
@@ -50,7 +34,7 @@
             <a class="nav-link" href="/email"><b>Contacta con Nosotros</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/auth/login"><b>Login</b></a>
+            <a class="nav-link" href="/auth/logout"><b>Logout</b></a>
           </li>
         </ul>
       {{!-- <a href="/auth/logout">Logout</a> --}}
@@ -59,3 +43,5 @@
     {{!-- <div class="footer"><a class="home-footer" href="/">Home</a> HandyDrops© 2018 Copyright</a>
     </div>
   </footer> --}}
+
+  {{/if}}
